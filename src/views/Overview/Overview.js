@@ -7,22 +7,35 @@ import {
 } from '@coreui/react'
 import { BsCursor } from "react-icons/bs";
 import { BsCreditCard2Back } from "react-icons/bs";
+import Carousel from "react-elastic-carousel";
+
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+];
 
 function Overview() {
     const dataCircle1 = [20, 80]
     const dataCircle2 = [10, 90]
 
     return (
-        <div style={{height:window.innerHeight, overflow:"scroll"}}>
+        <div style={{ height: window.innerHeight, overflow: "scroll" }}>
             <div style={{ display: "flex", justifyContent: "center", marginTop: 60 }}>
                 <Header />
             </div>
 
-            <div style={{}}>
-                <div style={{ display: "flex", justifyContent: "space-around", marginTop: 50 }}>
-                    <Cards />
-                    <Cards />
-                    <Cards />
+            <div style={{marginTop:15}}>
+                <div>
+                    <Carousel breakPoints={breakPoints}>
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                    </Carousel>
                 </div>
 
 
