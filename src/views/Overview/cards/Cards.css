@@ -1,0 +1,31 @@
+.cards{
+    width:350px;
+    height:180px;
+    background-color: #fff;
+   
+    border-radius:8px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px 0 0 20px;
+    cursor: pointer;
+}
+
+.cards:hover{
+    background: cover;
+    background-size:auto;
+    background: url("../../../assets/img/bdcard.png");
+}
+
+.cards:hover .prix{
+    color: #fff
+}
+
+.prix{
+    color: #000;
+}
+
+.numCard{
+    color: #B2B2C6
+}

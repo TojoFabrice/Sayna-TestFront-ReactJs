@@ -1,0 +1,15 @@
+.content{
+    background-color: #fff;
+    height: 100vh;
+    min-width: 230px;
+    max-width: 230px;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #303778;
+}
