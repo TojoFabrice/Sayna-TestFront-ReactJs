@@ -24,3 +24,7 @@ body{
     background-color: #303777 !important;
     color: #fff !important;
 }
+
+.divMess{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
