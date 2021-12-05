@@ -14,15 +14,14 @@ const DoughnutChart = ({ dataCircle,labelChart,valChart }) => {
                 backgroundColor: ["#fff", '#303777'],
                 borderColor: "#303777",
                 borderWidth: 1,
-                cutoutPercentage: 80,
-                percentageInnerCutout: 40
+                cutout: '35%'
             },
         ],
     }
 
     return (
         <div style={{ display: "flex" }}>
-            <Doughnut data={data} height="20px" width="20px" />
+            <Doughnut data={data} height="20px" width="20px"/>
             <div style={{
                 minWidth: 130,
                 display: "flex",

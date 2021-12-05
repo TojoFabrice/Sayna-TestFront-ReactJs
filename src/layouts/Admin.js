@@ -12,15 +12,17 @@ function Admin() {
                     {routes.map((prop, key) => {
                         return (
                             <Route
-                                path={prop.layout + prop.path}
-                                component={prop.component}
-                                key={key}
+                            path={prop.layout + prop.path}
+                            component={prop.component}
+                            key={key}
                             />
-                        );
-                    })}
+                            );
+                        })}
                     <Redirect from="/admin" to="/admin/dashboard" />
                 </Switch>
+               
             </div>
+            <div style={{width:"100%", height:60, background:"#fafbfda3", position:"absolute", bottom:0,paddingTop:50,overflow:"hidden"}}></div>
         </div>
     )
 }
